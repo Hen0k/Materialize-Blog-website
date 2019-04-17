@@ -11,14 +11,14 @@
 }
 
 .responsive-image {
-  max-width: 100%; 
-  display:block; 
+  max-width: 100%;
+  display:block;
   height: auto;
 }
 
 .section{
 	padding-bottom: 50px;
-	
+
 }
 
 .apptext{
@@ -29,7 +29,7 @@ img.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-} 
+}
 
 #ABC {
       background-color: #37474f;
@@ -40,3 +40,27 @@ img.center {
 	background-color: #ff6f00;
 }
 
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; }
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite;
+}
